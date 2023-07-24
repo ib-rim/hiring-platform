@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\hiring-platform.props" />
+</Project>
