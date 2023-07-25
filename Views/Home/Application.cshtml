@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Application";
+}
+
+<form class="application">
+    <div class="required-fields"><span class="asterisk">*</span> Required fields</div>
+    <header class="form-header">
+        <h2>Company Information</h2>
+        <button class="clear-form">🗑 Clear</button>
+    </header>
+
+    <div class="input-group">
+        <label for="companyName"><span class="asterisk">*</span> Company Name</label>
+        <input required type="text" id="companyName">
+    </div>
+
+    <div class="input-group">
+        <label for="companyLinkedIn"><span class="asterisk">*</span> Company LinkedIn</label>
+        <input required type="text" id="companyLinkedIn">
+    </div>
+
+    <div class="input-group">
+        <label for="role"><span class="asterisk">*</span> Role</label>
+        <input required type="text" id="role">
+    </div>
+
+    <div class="input-group">
+        <label for="contactName"><span class="asterisk">*</span> Contact Name</label>
+        <input required type="text" id="contactName">
+    </div>
+    <div class="input-group">
+        <label for="contactEmail"><span class="asterisk">*</span> Contact Email</label>
+        <input required type="email" id="contactEmail">
+    </div>
+    <div class="input-group">
+        <label for="contactPhoneNumber">Contact Phone Number</label>
+        <input type="text" id="contactPhoneNumber">
+    </div>
+
+    <div class="input-group">
+        <label for="salary"><span class="asterisk">*</span> Salary</label>
+        <input required type="text" id="salary">
+    </div>
+    <div class="input-group">
+        <label for="jobDescription"><span class="asterisk">*</span> Job Description</label>
+        <p>Upload pdf/doc/docx</p>
+        <input required type="file" id="jobDescription">
+    </div>
+
+    <div class="input-group">
+        <label for="workModel"><span class="asterisk">*</span> Work Model</label>
+        <select required type="" id="workModel">
+            <option value="inOffice">In Office</option>
+            <option value="hybrid">Hybrid</option>
+            <option value="remote">Remote</option>
+        </select>
+    </div>
+
+    <div class="input-group">
+        <label for="other">Other</label>
+        <textarea type="text" id="other"></textarea>
+    </div>
+
+    <button type="submit" class="submit">Submit Application</button>
+</form>

@@ -1,22 +1,125 @@
+:root {
+    --color-primary: #7a478d;
+    --color-secondary: #f5a747;
+}
+
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 
 @media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
-  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
-}
-
-html {
-  position: relative;
-  min-height: 100%;
+    html {
+        font-size: 16px;
+    }
 }
 
 body {
-  margin-bottom: 60px;
+    background-color: whitesmoke;
+    font-family: sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* HEADER */
+
+.header {
+    background-color: white;
+    box-shadow: 2px 0 10px #d2d2d2;
+    padding: 1em 1em 0;
+    text-align: center;
+}
+
+.tabs {
+    border-top: 1px solid #e6e6e6;
+    padding: 1em 0 0;
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.tab {
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    color: gray;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.tab.active {
+    color: var(--color-primary);
+    border-bottom: 3px solid var(--color-primary);
+}
+
+/* MAIN BODY */
+
+.main {
+    max-width: 40em;
+    margin: 1em 1em;
+}
+
+@media (min-width: 41em) {
+    .main {
+        margin: 1em auto;
+    }
+}
+
+.apply,
+.submit {
+    background-color: var(--color-primary);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+}
+
+.asterisk {
+    color: red;
+}
+
+.footer {
+    border-top: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 1em;
+}
+
+/* FORM */
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.clear-form {
+    background: none;
+    border: none;
+    color: #afafaf;
+    font-weight: bold;
+}
+
+.required-fields {
+    font-size: 0.9rem;
+    color: gray;
+    margin: 2em 0;
+}
+
+.input-group {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin: 0.5em 0;
+}
+
+.input-group input, .input-group select {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0.5em;
 }
